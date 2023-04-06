@@ -8,7 +8,7 @@ public class TempConversion
     {
         double converted_temp = 0;
 
-        if (temp_specifier.equals("celsius"))
+        if (temp_specifier.equalsIgnoreCase("celsius"))
         {
             converted_temp = ((temp * (9 / 5)) + 32);
             System.out.printf("Converted temperature = %.2f Fahreinheit", converted_temp);
@@ -36,7 +36,7 @@ public class TempConversion
         System.out.println("Specify if inputted temperature is in Celsius or Fahrenheit:");
         String temp_specifier = sc.next();
 
-        temp_specifier = temp_specifier.toLowerCase();
+        // temp_specifier = temp_specifier.toLowerCase();
 
         temp_conversion(input_temp, temp_specifier);
 
