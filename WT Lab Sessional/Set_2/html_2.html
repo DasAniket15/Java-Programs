@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h2>Feedback Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="roll_no">Roll No:</label>
+      <input type="text" id="roll_no" name="roll_no" required /><br /><br />
+
+      <label>Branch:</label><br />
+      <input type="radio" id="cs" name="branch" value="CS" required />
+      <label for="cs">CS</label><br />
+      <input type="radio" id="it" name="branch" value="IT" />
+      <label for="it">IT</label><br /><br />
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">Select Subject</option>
+        <option value="WT">WT</option>
+        <option value="COA">COA</option></select
+      ><br /><br />
+
+      <label for="remarks">Remarks:</label><br />
+      <textarea id="remarks" name="remarks" rows="5" cols="30"></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

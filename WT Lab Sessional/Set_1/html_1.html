@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="submit-form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="roll_no">Roll No:</label>
+      <input type="text" id="roll_no" name="roll_no" required /><br /><br />
+
+      <label>Branch:</label><br />
+      <input type="radio" id="cs" name="branch" value="CS" required />
+      <label for="cs">CS</label><br />
+      <input type="radio" id="it" name="branch" value="IT" required />
+      <label for="it">IT</label><br /><br />
+
+      <label for="event">Event:</label>
+      <select id="event" name="event" required>
+        <option value="" disabled selected>Select an event</option>
+        <option value="Singing">Singing</option>
+        <option value="Dancing">Dancing</option></select
+      ><br /><br />
+
+      <label for="address">Address:</label><br />
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
